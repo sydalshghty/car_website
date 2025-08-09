@@ -46,28 +46,28 @@ body {
 }
 @media (max-width: 1550px){
     .container{
-        padding-left: 80px;
-        padding-right: 80px;
+        padding-left: 60px;
+        padding-right: 60px;
     }
 }
 @media (max-width: 1300px){
-    .container{
-        padding-left: 60px !important;
-        padding-right: 60px !important;
-    }
-}
-@media (max-width: 1200px){
     .container{
         padding-left: 40px !important;
         padding-right: 40px !important;
     }
 }
+/*@media (max-width: 1200px){
+    .container{
+        padding-left: 0px !important;
+        padding-right: 40px !important;
+    }
+}*/
 @media (max-width: 600px){
     .content-Navbar{
         display: none;
     }
     .container{
-        padding-left: 16px !important;
-        padding-right: 16px !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
     }
 }

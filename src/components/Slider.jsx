@@ -8,6 +8,10 @@ import sliderimg6 from "../assets/NyJYEC3BsWPf.png";
 import sliderimg7 from "../assets/QuLbHqo58DJa1nNGxmIOXdFnR0e2JJDn940BrmWL (1).png";
 import sliderimg8 from "../assets/uZEVbiUXXFP0CZ3.png";
 import "../css/slider.css";
+import "@fortawesome/react-fontawesome";
+import "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 function Slider() {
   const images = [
@@ -48,12 +52,16 @@ function Slider() {
           alt="slider"
           className="absolute w-full h-full slider-image"
         />
-        <div className="overlay"></div> {/* الطبقة الشفافة */}
+        <div className="overlay"></div>
       </div>
       <div className="container absolute z-10">
         <div className="slider-buttons">
-            <button onClick={prevSlide}>⬅ Left</button>
-            <button onClick={nextSlide}>Right ➡</button>
+          <div className="col-icon">
+            <FontAwesomeIcon className="icon" onClick={prevSlide} icon={faChevronLeft} />
+          </div>
+          <div className="col-icon">
+            <FontAwesomeIcon className="icon" onClick={nextSlide} icon={faChevronRight} />
+          </div>
       </div>
       </div>
     </div>
